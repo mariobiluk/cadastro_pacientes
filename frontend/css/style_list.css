@@ -1,0 +1,43 @@
+.tabelaPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+table,th,td {
+    border: solid 1px white;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: bold;
+}
+
+th,td{
+    color: white;
+    padding: 6px 4px;
+    font-size: 1.2rem;
+
+}
+
+label,#resposta{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+input,button{
+    background-color: rgb(219, 180, 255);
+    color: rgb(3, 0, 34);
+    text-align: center;
+    font-weight: bolder;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
