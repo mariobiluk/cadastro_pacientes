@@ -14,6 +14,9 @@ app.use(cors())
 
 app.post('/paciente', pacienteController.cadastrar)
 app.get('/pacientes', pacienteController.listar)
+app.get('/paciente/:id', pacienteController.consultar)
+app.delete('/paciente/:id',pacienteController.apagar)
+
 
 app.get('/',(req,res)=>{
     res.status(200).json({message: 'Aplicação rodando!!!'})

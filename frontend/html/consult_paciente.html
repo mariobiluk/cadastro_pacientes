@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_list.css">
-    <script src="../js/list_paciente.js" defer></script>
-    <title>Listagem de Pacientes</title>
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/consult_paciente.js"defer></script>
+    <title>Consultar Paciente</title>
 </head>
 
 <body>
@@ -22,19 +22,17 @@
     </header>
     <main>
         <article>
-            <h1>LISTAR DE PACIENTES</h1>
-        </article>
-        <br>
-        <section>
-            <button id="btn_listar">Listar</button>
-        </section>
-        <br><br>
-        <section class="tabelaPrincipal">
-            <article class="tabela" id="resposta">
-                
-            </article>
-        </section>
+            <h1>CONSULTAR PACIENTES</h1>
+        </article><br><br>
+        <form>
+            <label for="id">Código do Paciente</label>
+            <input type="text" id="id" placeholder="Código do Paciente"><br><br>
+
+            <button id="btn_consultar">Consultar</button><br><br>
+        </form>
+        <div id="resposta"></div>
     </main>
+
 </body>
 
 </html>
